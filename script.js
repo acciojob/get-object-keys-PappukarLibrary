@@ -1,8 +1,11 @@
-//your JS code here. If required.
-const student ={
-	name:"pappu"
-	
+const student = {
+  name: 'John Doe'
 };
-student.prototype.getKeys =function(){
-	return student.Keys(this);
+
+// Add getKeys method to Object.prototype
+Object.prototype.getKeys = function() {
+  return Object.keys(this);
 };
+
+// Use the getKeys method
+console.log(student.getKeys());
